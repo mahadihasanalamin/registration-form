@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<form action="form-submit.php" method="POST">
+		<fieldset>
+			<legend>Basic Information</legend>
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="fname">
+			<br><br>
+
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lname">
+			<br><br>
+
+			<label>Gender:</label>
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label>
+			<input type="radio" id="others" name="gender" value="others">
+			<label for="others">Others</label>
+			<br><br>
+
+			<label for="dob">DOB:</label>
+			<input type="date" id="dob" name="dob">
+			<br><br>
+
+			<label for="religion">Religion:</label>
+			<select id="religion" name="religion">
+				<option value="islam">Islam</option>
+				<option value="hinduism">Hinduism</option>
+				<option value="buddhist">Buddhist</option>
+				<option value="cristian">Cristian</option>
+			</select>
+		</fieldset>
+		<br><br>
+
+		<fieldset>
+			<legend>Contact Information</legend>
+			<label for="presentaddress">Present Address:</label>
+			<textarea id="presentaddress" name="presentaddress"></textarea>
+			<br><br>
+
+			<label for="permanentaddress">Permanent Address:</label>
+			<textarea id="permanentaddress" name="permanentaddress"></textarea>
+			<br><br>
+
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone">
+			<br><br>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email">
+			<br><br>
+
+			<label for="website">Website:</label>
+			<input type="url" id="website" name="wesite">
+			<br><br>
+
+		</fieldset>
+		<br><br>
+
+		<input type="submit" name="submit" value="submit">
+	</form>
+</body>
+</html>
